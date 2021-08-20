@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+input.invalid {
+	border: solid red;
+  background-color: #ffdddd;
+}
+
+input:required:valid{
+	border: solid green;
+}
+
+input:required{
+	border: green;
+}
+
+input:required:invalid{
+	background-color:  #ffdddd;	
+	border: solid red;
+}
+
+input{
+	background-color: none;
+}
+
+img{
+	width: 20px;
+}

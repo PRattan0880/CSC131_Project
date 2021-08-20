@@ -1,0 +1,39 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Personal Information</title>
+	<!--<link rel="stylesheet" type="text/css" href="webstyle.css">
+	<link rel="stylesheet" type="text/css" href="menunavbar.css"> -->
+</head>
+<body>
+	<div id="header">
+		<div class="contact">
+			<div class="customer1">
+				<h2>Personal Information</h2>
+				<!--User Question about providing personal Information-->
+				<p>Would you like to provide your Personal Information? (NOTE: Information will not be stored)</p>
+
+				<form>
+					<!--Input for user answering yes-->
+					<input type="radio" id="yes" name="choice">Yes
+  						
+  					<!--Input for user answering no-->
+  					<input type="radio" id="no" name="choice">No
+  					<input type="button" onclick="Userchoice()" value="submit">
+ 					<script>
+						function Userchoice(){
+								if ( document.getElementById("no").checked){
+										location.href="lessInformation.html";
+								}
+								
+						}
+
+ 					</script>	
+				</form> 
+
+			</div>	
+		</div>
+			
+	</div>
+</body>
+</html>	

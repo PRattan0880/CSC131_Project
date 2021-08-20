@@ -1,0 +1,958 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+*{
+	box-sizing:border-box;
+}
+body{
+	margin: 0;
+}
+.logo{
+	width: 100%;
+	height: 100px;
+	border: none;
+	padding-top: 50px;
+	padding-left: 20px;
+	float: left;
+	background-color: white;
+}
+
+/* Create three unequal columns that floats next to each other */
+
+.top-cell{
+    display: block;
+    float: right;
+}
+
+/* Left and right column */
+.column.side {
+  width: 100%;
+  border: none;
+  height: 310px;
+  height: 340px;
+  margin: 0 auto;
+  background-image: url(../img/beehive-2.jpg);
+}
+
+
+/* Middle column */
+
+.column.middle {
+  width: 40%;
+  opacity: 0.9;
+  box-shadow: 5px 5px #666633;
+  height: 280px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius :10px;
+  background-color: #FAEBD7;
+}
+
+/* Clear floats after the columns */
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#logo{
+	margin:left;
+	width: 30%;
+	margin-top: -2.2%;
+}
+
+#logo:hover{
+	margin:left;
+	width: 30%;
+	opacity: 85%;
+}
+
+
+.button1:hover{
+	color: gold;
+	transition: 1s;
+}
+
+.button2:hover{
+	color: gold;
+	transition: 1s;
+}
+
+.navbar {
+  list-style-type: none;
+  background-color: #333;
+
+
+}
+
+#nav {
+  float: left;
+}
+
+#nav a {
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  background-color: #111;
+  color: gold;
+}
+
+
+
+.travel {
+   width: 100%;
+   height: 300px;
+   background: #e6b711;
+}
+
+#travel-box {
+  float: left;
+  margin-top: 5%;
+  list-style-type: none;
+}
+
+#travelBar {
+	margin-left: 30%;
+}
+
+#travelBar a {
+  background-color: green;
+  color: blue;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: 2px solid red;
+}
+
+#travelBar a:hover {
+  background-color: #111;
+  color: gold;
+}
+
+.error{
+	outline: 1px solid red;
+}
+
+h1 {
+	font-family: "Georgia", Times, serif;
+	font-size: 30px;
+	text-align: center;
+	color: rgb(220, 88, 42);
+	margin-top: auto;
+}
+
+.header {
+	height: 80px;
+	border: none;
+	background-color: white;
+}
+.gradient {
+	height: 6px;
+	width: 100%;
+	background: -webkit-gradient(linear, left top, right top, color-stop(25%, #008453), color-stop(40%, #ce7712), color-stop(60%, #fafa43), to(#380042));
+   background: linear-gradient(90deg, #008453 25%, #ce7712 40%, #fafa43 60%, #380042 100%);
+}
+
+.gradient1 {
+	height: 6px;
+	width: 100%;
+	background: -webkit-gradient(linear, right top, left top, color-stop(25%, #008453), color-stop(40%, #ce7712), color-stop(60%, #fafa43), to(#380042));
+    background: linear-gradient(270deg, #008453 25%, #ce7712 40%, #fafa43 60%, #380042 100%);
+}
+.empty {
+	background-image: url(../img/homepage.jpg);
+	height: 410px;
+}
+#media {
+	width: 6%;
+	transition: 0.2s;
+}
+
+#mediaA {
+	width: 20%;
+	float: left;
+	transition: 0.2s;
+}
+
+#media:hover {
+	width: 6%;
+    opacity: 60%;
+	
+}
+
+#address {
+	color: red;
+}
+
+.media{background-color: black;
+	text-align: center;
+	height: 100px;
+}
+/*Image size for commute icons*/
+#align{
+	 width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 1em;
+    margin-bottom: 1%;
+}
+
+#align:hover{
+	 width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 1em;
+    margin-bottom: 1%;
+    transform: scale(1.2);
+    opacity: 60%;
+}
+
+/*CSS FOR COMPARISON PAGE*/
+
+
+.info-columnA{
+    float: left;
+    padding: 2px;
+    width: 50%;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow:  0 2px 2px yellow;
+    background-color: #00996e;
+
+}
+.info-columnB{
+    float: left;
+    padding: 2px;
+    width: 50%;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 0 2px  2px yellow;
+    background-color: #00996e;
+}
+
+.info-row:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.card-block {
+	color: whitesmoke;
+}
+
+.card-block-total{
+	text-align: center;
+	background-color: yellow;
+	height: 30px;
+	top-align: center;
+	padding: 5px 5px 5px 5px;
+	font-weight: bold;
+	
+}
+
+#test{
+	border-left: solid red;
+}
+
+#bottom{
+	border-bottom: solid red;
+}
+
+/*Main page links*/
+.d-flex{
+    display: flex;
+    list-style-type: disc;
+    flex-wrap: wrap;
+}
+
+
+.option li.option-box {
+    padding: 0 1% 0 0;
+    list-style: none;
+    max-width: 350px;
+    margin-bottom: 2%;
+}
+
+
+div.option-box-content{
+	background-color: rgba(0, 78, 56, 1);
+    height: 100%;
+    padding: 0 0 1em 0;
+    -webkit-box-shadow: rgb(97, 84, 34) 0 3px 6px;
+    box-shadow: rgb(97, 84, 34) 0 3px 6px;
+}
+
+
+.option .option-box div.option-box-content {
+    background-color: rgba(0, 78, 56, 1);
+    border-radius: 4px 4px 4px 4px;
+    padding: 0 0 1em 0;
+    -webkit-box-shadow: rgb(97, 84, 34) 0 3px 6px;
+    box-shadow: rgb(97, 84, 34) 0 3px 6px;
+    transition: 0.2s;
+}
+
+.option .option-box div.option-box-content:hover {
+    background-color: #00b300;
+    border-radius: 4px 4px 4px 4px;
+    padding: 0 0 1em 0;
+    -webkit-box-shadow: rgb(97, 84, 34) 0 3px 6px;
+    box-shadow: rgb(97, 84, 34) 0 6px 6px 6px;
+}
+
+
+
+.option-box-content p{
+	color: white;
+	padding: 20px;
+	text-align: center;	  
+}
+
+.titleStyle{
+	text-align: center;
+	color: #f0e1b0;
+	font-size: 20px;
+	text-shadow: 0 1px 1px black;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+.option li.option-box {
+        /*        -webkit-box-flex: 1;*/
+        -ms-flex: 1 0 32%;
+        -webkit-box-flex: 1;
+        flex: 1 0 32%;
+    }
+
+ .option li.option-box:last-of-type {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+.option li.option-box {
+        /*        -webkit-box-flex: 1;*/
+        -ms-flex: 1 0 32%;
+        -webkit-box-flex: 1;
+        flex: 1 0 32%;
+    }
+
+ .option li.option-box:last-of-type {
+        margin-right: 0;
+    }
+
+    .option li.option-box {
+    padding: 0 1% 0 0;
+    list-style: none;
+    max-width: 450px;
+    margin-bottom: 2%;
+}
+.d-flex{
+    display: flex;
+    list-style-type: disc;
+    flex-wrap: wrap;
+    margin-right: 2%;
+}
+
+}
+
+
+.option .option-box .option-box-content img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 740px){
+   
+.option li.option-box {
+    padding: 0 1% 0 0;
+    list-style: none;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-right:10%;
+}
+}
+
+.container{
+	background-color: #E6B711;
+	width: 100%;
+	border: 2px solid #E6B711;
+}
+
+div.image-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+
+/*Car Styling*/
+
+.survey{
+	margin: 0 auto;
+	width: 30%;
+	}
+
+#location-form{
+
+    text-align: center;
+    background-color: #FFDEAD;
+	border-radius: 20px;
+	height: 380px;
+	box-shadow: 5px 5px 5px 5px #666633;
+}
+
+#style {
+
+	color: green;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px  #e6b711;
+}
+
+.ground {
+
+	background-color: green;
+	height: 410px;
+}
+
+/*Carpool Styling*/
+#location-formCarpool{
+    text-align: center;
+    background-color: #FFDEAD;
+	border-radius: 20px;
+	height: 440px;
+	box-shadow: 5px 5px 5px 5px #666633;
+}
+
+.groundCarpool {
+	background-color: green;
+	height: 480px;
+}
+
+/*Comparison Page */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FAC606;
+     
+}
+
+.flex-container > div {
+  background-color: rgba(0, 78, 56, 1);
+  margin: 10px;
+  padding: 20px;
+  font-size: 13.5px;
+  width: 420px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 0 0 1em 0;
+  box-shadow: rgb(97, 84, 34) 0 1px 2px 2px;
+  height: 550px;
+  
+}
+
+.flex-container >div:hover {
+  background-color: #00b300;
+  margin: 10px;
+  padding: 20px;
+  font-size: 13.5px;
+  width: 420px;
+  border-radius: 4px 4px 4px 4px;
+  padding: 0 0 1em 0;
+  box-shadow: rgb(97, 84, 34) 0 3px 2px 2px;
+  height: 550px;
+}
+.back {
+	border-radius: 3px;
+	height: 270px;
+}
+
+#imageSize {
+	width: 100%;
+	display: block;
+	margin: auto;
+	padding: 0px 0px 3px; 
+
+}
+
+.flex-graph {
+  display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+     
+}
+
+.flex-graph > div {
+  background-color:rgb(250,198,6);
+   background:url(../img/comb-pattern-1.svg),linear-gradient(-20deg, rgb(230,234,133) 0%, rgb(230,234,133) 35%, rgb(232,185,14) 100%);
+   background-blend-mode: multiply;
+  margin: 10px;
+  font-size: 13.5px;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: rgb(97, 84, 34) 0 1px 2px 2px;
+  height: auto;
+  transition: .5s;
+  
+}
+
+.flex-graph >div:hover {
+   background-color: #FAC606;
+  margin: 10px;
+  font-size: 13.5px;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: rgb(97, 84, 34) 0 3px 2px 2px;
+}
+
+@media screen and (max-width: 600px){
+	.flex-graph > div {
+		width: 100%;
+  
+}
+}
+/*CAR SURVEY PAGE */
+.empty2{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+}
+.empty2 > h2{
+ margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 3em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 100px;
+}
+
+@media screen and (max-width: 600px){
+	.empty2{
+	min-height: 200px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+}
+.empty2 > h2{
+
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 1.6em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 10px;
+
+}
+
+
+#location-form{
+    text-align: center;
+    background-color: #FFDEAD;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 5px #666633;
+}
+
+#style {
+	color: green;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px  #e6b711;
+}
+
+.ground {
+
+	background-color: green;
+	height: 410px;
+
+}
+
+
+.survey{
+	width:80%;
+	}
+
+
+
+}
+
+/* CARPOOL SURVEY */
+.empty3{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/csus-parking-structure-rendering.png'); 
+	background-size: cover;
+}
+.empty3 > h2{
+ margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 3em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 100px;
+
+}
+
+
+@media screen and (max-width: 600px){
+.empty3{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty3 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+
+/* BIKE SURVEY */
+.empty4{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/csu-sac-state-1.jpg'); 
+	background-size: cover;
+}
+.empty4 > h2{
+ margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 3em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 100px;
+}
+
+@media screen and (max-width: 600px){
+.empty4{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty4 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+
+/*BICYCLE SURVEY*/
+.empty5{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/hero-sacstate.jpg'); 
+	background-size: cover;
+}
+.empty5 > h2{
+ margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 3em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 100px;
+}
+
+
+@media screen and (max-width: 600px){
+.empty5{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty5 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+/**WALK SURVEY*/
+.empty6{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/CSU-Sacramento.jpg'); 
+	background-size: cover;
+}
+.empty6 > h2{
+ margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+   font-size: 3em;
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   text-indent: 100px;
+}
+
+@media screen and (max-width: 600px){
+.empty6{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty6 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+
+/**BUS/ TRANSIT SURVEY **/
+.empty7{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/emptycampus-storypage.jpg'); 
+	background-size: cover;
+}
+.empty7 > h2{
+ margin: 0;
+ position: absolute;
+ top: 30%;
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ font-size: 3em;
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+ text-indent: 100px;
+}
+
+
+@media screen and (max-width: 600px){
+.empty7{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty7 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+
+/**LIGHT RAIL SURVEY **/
+.empty8{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/te-sacramento.jpg'); 
+	background-size: cover;
+}
+.empty8 > h2{
+ margin: 0;
+ position: absolute;
+ top: 30%;
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ font-size: 3em;
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+ text-indent: 100px;
+}
+
+@media screen and (max-width: 600px){
+.empty8{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty8 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+/**MULTIMODE SURVEY **/
+.empty9{
+	min-height: 300px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/planitary.jpg'); 
+	background-size: cover;
+}
+.empty9 > h2{
+ margin: 0;
+ position: absolute;
+ top: 30%;
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ font-size: 3em;
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+ text-indent: 100px;
+}
+
+@media screen and (max-width: 600px){
+.empty9{
+	min-height: 220px;
+	background-position: center;
+	background-image: linear-gradient(270deg, rgba(196,182,129,0) 50%, rgba(0,78,56,0.6) 50%, rgba(0,78,56,1) 100%), url('../img/PARKING_PIC1.jpg'); 
+	background-size: cover;
+	}
+.empty9 > h2{
+
+  	position: absolute;
+  	-ms-transform: translateY(-50%);
+ 	 transform: translateY(-50%);
+   	font-size: 1.6em;
+   	color: white;
+   	font-family: 'Open Sans', sans-serif;
+   	text-indent: 10px;
+}
+}
+
+#radio{
+	line-height: 0px
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  margin:0 auto;
+  justify-content: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */ 
+  width: 100%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  display: none;
+    -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background-color:  #555;;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/**Modal for Selection of final Commute Options**/
+
+
+/* Modal Content */
+.modal-content2 {
+  display: none;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  background-color:  #555;;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    
+  .modal {
+  display: none;
+  justify-content: center;
+  width: 100%; /* Full width */
+  height: 55%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  text-align: center;
+
+}
+
+}
+
+/* Media Screen for Commute page*/
+@media screen and (max-width: 600px){
+	.column.middle {
+ 	 	width: 80%;
+ 	 	opacity: 0.9;
+  	 	box-shadow: 5px 5px #666633;
+ 	 	height: 280px;
+ 	 	padding: 5px;
+ 	 	margin: 0 auto;
+   	 	border-radius :10px;
+     	background-color: #FAEBD7;
+	}
+}
+
+@media screen and (min-width: 610px){
+	.column.middle {
+  		height: 90%;
+	}
+}

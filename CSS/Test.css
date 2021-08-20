@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+input.invalid {
+	border: solid red;
+  background-color: #ffdddd;
+}
+
+input.valid{
+	border: solid green;
+}

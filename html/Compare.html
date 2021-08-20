@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta charset="ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="../CSS/top.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/carStyling.css">
+	<link rel = "icon" href ="../img/icon.png" type = "image/x-icon"> 
+<title>Comparison</title>
+</head>
+<body onload="showResult()">
+<div class="header">
+		<div class="logo">
+			<a href="http://csus.edu"><img id="logo" src= "../img/logo.png" ></a>
+		<div class="top-cell">
+			<ul class="navbar">
+				<li id="nav"><a class="button1" href="commute.html">HOME</a></li>
+				<li id="nav"><a class="button2" href="https://www.csus.edu/parking-transportation/">ABOUT</a></li>
+			</ul>
+		</div>
+		</div>
+</div>
+	<br>
+<div class="gradient1"></div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id="modal1">
+    <span class="close" onclick="no()">&times;</span>
+    <p>Would you reconsider commute option?</p>
+    <button type="button" onclick="yes()">YES</button>
+    <button type="button" onclick="no()">NO</button>
+  </div>
+  <div class="modal-content2" id="modal2">
+ 		<p>Final Choice</p>
+ 		<select id="Commute"  name="Commute" required>
+						<option value="CAR">CAR</option>
+						<option value="CARPOOL">CARPOOL</option>
+						<option value="BIKE">BIKE</option>
+						<option value="BICYCLE">BICYCLE</option>
+						<option value="WALK">WALK</option>
+						<option value="BUS">BUS</option>
+						<option value="LIGHTRAIL">LIGHTRAIL</option>
+						<option value="MULTIMODE">MULTIMODE</option>
+					</select> 
+					<button type="button" onclick="finalCommute()">SUBMIT</button>
+ </div>
+</div>
+
+<div class="flex-container">
+	<div>
+		<div><img  id= "imageSize" src="../img/CarCom.png"></div>	
+		<div class="info-columnA">
+		
+			<div class="back">
+				<h3 class="titleStyle">COST (YEARLY):</h3>
+				<p class="card-block">
+					<span id="Permit">PERMIT: </span>
+					<span id="car-permit"></span>
+				</p>
+				<p class="card-block">
+					<span id="Payment">PAYMENT: </span>
+					<span id="car-payment"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Insurance">INSURANCE: </span>
+					<span id="car-insurance"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Gas">GAS:</span>
+					<span id="car-gas"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Repair">MAINTENANCE:</span>
+					<span id="car-repair"></span>
+				</p>
+				<p class="card-block-total">
+					<span  id="Total">TOTAL:</span>
+					<span id="car-total"></span>
+				</p>
+			</div>	
+		</div>
+		<div class="info-columnB">
+	  			<div class="back">	
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="car-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="car-duration"></span>
+					</p>
+				</div>	
+		</div>
+	</div>
+	<div>
+		<div><img id= "imageSize" src="../img/carpoolCom.png"></div>
+		<div class="info-columnA">
+			<div class="back">
+				<h3 class="titleStyle">COST (YEARLY):</h3>
+				<p class="card-block">
+					<span id="Permit">PERMIT: </span>
+					<span id="carpool-permit"></span>
+				</p>
+				<p class="card-block">
+					<span id="Payment">PAYMENT: </span>
+					<span id="carpool-payment"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Insurance">INSURANCE: </span>
+					<span id="carpool-insurance"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Gas">GAS:</span>
+					<span id="carpool-gas"></span>
+				</p>
+				<p class="card-block">
+					<span  id="Repair">MAINTENANCE:</span>
+					<span id="carpool-repair"></span>
+				</p>
+				<p class="card-block-total">
+					<span  id="Total">TOTAL:</span>
+					<span id="carpool-total"></span>
+				</p>
+			</div>	
+		</div>
+		<div class="info-columnB">
+	  		<div class="back">	
+	  			<h3 class="titleStyle">ECO:</h3>
+	  			<p class="card-block">
+					<span id="CO2">CO2 EMISSION:</span>
+					<span id="carpool-CO2"></span>
+				</p>
+	  			<h3 class="titleStyle">DURATION:</h3>
+	  			<p class="card-block">
+					<span id="Dur">DURATION:</span>
+					<span id="carpool-duration"></span>
+				</p>
+			</div>	
+		</div>
+	</div>
+	<div>
+			<div><img id= "imageSize" src="../img/BusCom.jpg"></div>
+			<div class="info-columnA">
+				<div class="back">			
+					<h3 class="titleStyle">COST(YEARLY):</h3>
+					<p class="card-block">
+						<span id="Permit">PERMIT: </span>
+						<span id="bus-permit"></span>
+					</p>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="bus-total"></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+					</p>
+				</div>	
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="bus-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="bus-duration"></span>
+					</p>
+				</div>	
+			</div>
+		</div>
+		<div>
+		<div><img id= "imageSize" src="../img/BikeCom.png"></div>
+			<div class="info-columnA">
+				<div class="back">
+					<h3 class="titleStyle">COST (YEARLY):</h3>
+					<p class="card-block">
+						<span id="Permit">PERMIT: </span>
+						<span id="moto-permit"></span>
+					</p>
+					<p class="card-block">
+						<span id="Payment">PAYMENT: </span>
+						<span id="moto-payment"></span>
+					</p>
+					<p class="card-block">
+						<span  id="Insurance">INSURANCE: </span>
+						<span id="moto-insurance"></span>
+					</p>
+					<p class="card-block">
+						<span  id="Gas">GAS:</span>
+						<span id="moto-gas"></span>
+					</p>
+					<p class="card-block">
+						<span  id="Repair">MAINTENANCE:</span>
+						<span id="moto-repair"></span>
+					</p>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="moto-total"></span>		
+					</p>
+				</div>	
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="moto-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="moto-duration"></span>
+					</p>
+				</div>	
+			</div>
+		</div>
+		<div class="info-column">
+		<div><img id= "imageSize" src="../img/LightCom.png"></div>
+			<div class="info-columnA">
+				<div class="back">
+					<h3 class="titleStyle">COST (YEARLY):</h3>
+					<p class="card-block">
+						<span id="Permit">PERMIT: </span>
+						<span id="rail-permit"></span>
+					</p>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="rail-total"></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+					</p>
+				</div>	
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="rail-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="rail-duration"></span>
+					</p>
+				</div>	
+			</div>
+	</div>
+	<div>
+		<div><img id= "imageSize" src="../img/BicycleCom.png"></div>
+			<div class="info-columnA">
+				<div class="back">
+					<h3 class="titleStyle">COST (YEARLY):</h3>
+					<p class="card-block">
+						<span id="Permit">PURCHASE: </span>
+						<span id="bike-permit"></span>
+					</p>
+					<p class="card-block">
+						<span id="Permit">MAINTENANCE: </span>
+						<span id="bike-repair"></span>
+					</p>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="bike-total"></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+					</p>
+				</div>	
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="bike-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="bike-duration"></span>
+					</p>
+				</div>	
+			</div>
+	</div>	
+	<div>
+		<div><img id= "imageSize" src="../img/WalkCom.png"></div>
+			<div class="info-columnA">
+				<div class="back">
+					<h3 class="titleStyle">COST (YEARLY):</h3>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="walk-total"></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+					</p>
+				</div>	
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  		 		<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2">CO2 EMISSION:</span>
+						<span id="walk-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur">DURATION:</span>
+						<span id="walk-duration"></span>
+					</p>
+				</div>	
+			</div>
+	</div>
+	<div id="multiMode" style="visibility: hidden">
+	<div><img id= "imageSize" src="../img/multiCom.png"></div>
+			<div class="info-columnA">
+				<div class="back">	
+					<h3 class="titleStyle">COST (YEARLY):</h3>
+					<p class="card-block">
+						<span id="mode_cost"></span>
+						<span id="mode1cost"></span>
+					</p>
+					<p class="card-block">
+						<span id="mode_cost2"></span>
+						<span id="mode2cost"></span>
+					</p>
+					<p class="card-block-total">
+						<span  id="Total">TOTAL:</span>
+						<span id="multi-total"></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+						<span><br></span>
+					</p>
+					<p class="card-block">
+						<span><br></span>
+					</p>
+				</div>
+			</div>
+			<div class="info-columnB">
+	  			<div class="back">
+	  				<h3 class="titleStyle">ECO:</h3>
+	  				<p class="card-block">
+						<span id="CO2_1">CO2 EMISSION:</span>
+						<span id="multi-CO2"></span>
+					</p>
+					<p class="card-block">
+						<span id="CO2_2">CO2 EMISSION:</span>
+						<span id="multi2-CO2"></span>
+					</p>
+	  				<h3 class="titleStyle">DURATION:</h3>
+	  				<p class="card-block">
+						<span id="Dur1"></span>
+						<span id="multi-duration"></span>
+					</p>
+					<p class="card-block">
+						<span id="Dur2"></span>
+						<span id="multi2-duration"></span>
+					</p>
+					<p class="card-block">
+						<span id="Dur">TOTAL: </span>
+						<span id="total-duration"></span>
+					</p>
+				</div>
+			</div>
+	</div>
+</div>
+<div class="gradient1"></div>
+
+<div class="flex-graph">
+	<div id="barchart_div"></div>
+	<div id="ecochart"></div>
+	<div id="durationchart"></div>
+</div>
+<div class="social">
+		<div class="media">
+			<img src="../img/WhiteLogo.png" id=mediaA>	
+			<a href="https://twitter.com/sacstate"><img src="../img/twitter.jpg" id=media></a>
+			<a href="https://www.facebook.com/sacstate"><img src="../img/facebook.jpg" id=media></a>
+			<a href="https://www.instagram.com/sacstate/"><img src="../img/instagram.jpg" id=media></a>
+			<a href="https://www.linkedin.com/school/sacstate"><img src="../img/linkedin.jpg" id=media></a>
+			<a href="https://www.flickr.com/photos/sacstate"><img src="../img/flickr.jpg" id=media></a>
+			<a href="https://www.youtube.com/user/SacStateVideo"><img src="../img/youtube.jpg" id=media></a>
+
+		</div>	
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="../js/travel.js" ></script>
+	<script src="../js/Geo.js" ></script>
+	<script src="../js/validation.js" ></script>
+	<script src="../js/car.js" ></script>
+	<script src="../js/comparison.js"></script>
+</body>
+</html>

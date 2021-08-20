@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="../CSS/top.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/carStyling.css">
+	<link rel = "icon" href ="../img/icon.png" type = "image/x-icon"> 
+
+<title>Light Rail</title>
+</head>
+<body>
+<div class="header">
+		<div class="logo">
+			<a href="http://csus.edu"><img id="logo" src= "../img/logo.png" ></a>
+		<div class="top-cell">
+			<ul class="navbar">
+				<li id="nav"><a class="button1" href="commute.html">HOME</a></li>
+				<li id="nav"><a class="button2" href="https://www.csus.edu/parking-transportation/">ABOUT</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+<div>
+<br>
+<div class="empty6">
+	<h2>WALK SURVEY</h2>
+</div>
+<div class="gradient1"></div>
+<div class="ground">
+	<br>
+		<div class="survey">	
+			<form id="location-form" onsubmit="setUpTransit();return false" method="post">	
+				<br>
+				<br>	
+					<label for="Appdistance" id="style">Address</label>
+				<br>
+					<input type="text" id="location-input" name="Appdistance"  required />
+					<div id='location-error' style="visibility: hidden; color: red;">**This field is required</div>
+					<label for="" id="style">Number of Days to Visit (Weekly)</label>
+				<br>
+					<input type="number" id="daysVisit" name="Days" min="1" max="5" required>
+				<br>
+				<br>
+			<input type="submit" value="Submit" id="submit">
+	 	</form>
+	 </div>
+</div>
+<div class="social">
+		<div class="media">
+			<img src="../img/WhiteLogo.png" id=mediaA>	
+			<a href="https://twitter.com/sacstate"><img src="../img/twitter.jpg" id=media></a>
+			<a href="https://www.facebook.com/sacstate"><img src="../img/facebook.jpg" id=media></a>
+			<a href="https://www.instagram.com/sacstate/"><img src="../img/instagram.jpg" id=media></a>
+			<a href="https://www.linkedin.com/school/sacstate"><img src="../img/linkedin.jpg" id=media></a>
+			<a href="https://www.flickr.com/photos/sacstate"><img src="../img/flickr.jpg" id=media></a>
+			<a href="https://www.youtube.com/user/SacStateVideo"><img src="../img/youtube.jpg" id=media></a>
+
+		</div>	
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/travel.js" ></script>
+	<script src="../js/transit.js" ></script>
+	<script src="../js/Geo.js" ></script>
+	<script src="../js/comparison.js" ></script>
+	<script src="../js/validation.js" ></script>
+</body>
+</html>

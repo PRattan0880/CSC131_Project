@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="../CSS/top.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/carStyling.css">
+	<link rel = "icon" href ="../img/icon.png" type = "image/x-icon"> 
+
+<title>Carpool Utaps</title>
+
+</head>
+<body>
+<div class="header">
+		<div class="logo">
+			<a href="http://csus.edu"><img id="logo" src= "../img/logo.png" ></a>
+		<div class="top-cell">
+			<ul class="navbar">
+				<li id="nav"><a class="button1" href="commute.html">HOME</a></li>
+				<li id="nav"><a class="button2" href="https://www.csus.edu/parking-transportation/">ABOUT</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+<div>
+<br>
+
+<div class="empty3">
+	<h2>CARPOOL SURVEY</h2>
+</div>
+<div class="gradient1"></div>
+
+<div class="groundCarpool">
+<br>
+	<div class= "survey">
+	<form id="location-formCarpool" onsubmit="setUpCarpool();return false" method="post">	
+
+    
+	<div class="tab">		
+		<br>
+		<br>	
+		<label for="Appdistance" id="style">Address</label>
+		<br>
+
+			<input type="text" id="location-input" name="Appdistance"  required />
+			<div id='location-error' style="visibility: hidden; color: red;">**This field is required</div>
+		<div class="custom-select">
+			<label for ="make" id="style">Make:</label><br>
+			<select id="make"  name="make" required>
+				<option value="">SELECT MAKE</option>
+				<option value="ACURA">ACURA</option>
+				<option value="AUDI">AUDI</option>
+				<option value="BMW">BMW</option>
+				<option value="BUICK">BUICK</option>
+				<option value="CADILLAC">CADILLAC</option>
+				<option value="CHEVROLET">CHEVROLET</option>
+				<option value="CHRYSLER">CHRYSLER</option>
+				<option value="DODGE">DODGE</option>
+				<option value="FIAT">FIAT</option>
+				<option value="FORD">FORD</option>
+				<option value="HYUNDAI">HYUNDAI</option>
+				<option value="INFINITI">INFINITI</option>
+				<option value="JAGUAR">JAGUAR</option>
+				<option value="LEXUS">LEXUS</option>
+				<option value="LINCOLN">LINCOLN</option>
+				<option value="MASERATI">MASERATI</option>
+				<option value="MAZDA">MAZDA</option>
+				<option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+				<option value="MINI">MINI</option>
+				<option value="MITSUBISHI">MITSUBISHI</option>
+				<option value="NISSAN">NISSAN</option>
+				<option value="RAM">RAM</option>
+				<option value="TESLA">TESLA</option>
+				<option value="TOYOTA">TOYOTA</option>
+				<option value="VOLKSVAGON">VOLKSVAGON</option>
+				<option value="VOLVO">VOLVO</option>
+			</select>
+			<br>
+			<br>
+			<label for="model" id="style">Model:</label><br>
+			<select id="model" name="model">
+				<option value="">SELECT MODEL</option>
+			</select>
+		</div>
+		<br>
+	<label for="AppCar" id="style">Approximate Car Payment:</label>
+		<br>
+			<input type="text" id="appPayment" name="AppCar" pattern="[0-9]{1,}" required>
+			<div id='car-error' style="visibility: hidden; color: red;">**This field is required</div>
+	<label for="" id="style">Number of Days to Visit (Weekly)</label>
+		<br>
+			<input type="number" id="daysVisit" name="Days" min="1" max="5" required>
+		<br>
+		<br>
+	<label for="" id="style">Number of people</label>
+		<br>
+			<input type="number" id="numPeople" name="People" min="1" max="5" required>
+		<br>
+		<br>	
+	</div>
+		<input type="submit" value="Submit" id="submit">
+	</form>
+	</div>
+	</div>
+</div>
+<div class="social">
+		<div class="media">
+			<img src="../img/WhiteLogo.png" id=mediaA>	
+			<a href="https://twitter.com/sacstate"><img src="../img/twitter.jpg" id=media></a>
+			<a href="https://www.facebook.com/sacstate"><img src="../img/facebook.jpg" id=media></a>
+			<a href="https://www.instagram.com/sacstate/"><img src="../img/instagram.jpg" id=media></a>
+			<a href="https://www.linkedin.com/school/sacstate"><img src="../img/linkedin.jpg" id=media></a>
+			<a href="https://www.flickr.com/photos/sacstate"><img src="../img/flickr.jpg" id=media></a>
+			<a href="https://www.youtube.com/user/SacStateVideo"><img src="../img/youtube.jpg" id=media></a>
+
+		</div>	
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/carDatabase.js"></script>
+
+	<script src="../js/travel.js" ></script>
+	<script src="../js/car.js" ></script>
+	<script src="../js/Geo.js" ></script>
+	<script src="../js/comparison.js" ></script>
+	<script src="../js/carpool.js" ></script>
+	
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>UTAPS</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/top.css">
+		<link rel="stylesheet" type="text/css" href="../CSS/survey.css">
+		 <link rel = "icon" href ="../img/icon.png" type = "image/x-icon"> 
+	</head>
+	<body>
+	<div class="header">
+		<div class="logo">
+			<a href="http://csus.edu"><img id="logo" src= "../img/logo.png" ></a>
+		<div class="top-cell">
+			<ul class="navbar">
+				<li id="nav"><a class="button1" href="commute.html">HOME</a></li>
+				<li id="nav"><a class="button2" href="https://www.csus.edu/parking-transportation/">ABOUT</a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<br>
+	<div class="empty"></div>
+	<div class="gradient1"></div>
+	<div class="content">
+				<div class="column side">
+				<br>
+					<div class="column middle">
+						<form id="regForm">			
+  							<!-- One "tab" for each step in the form: -->
+  							<div class="tab"><p class=info>Name:</p>
+    							<p><input id="text" placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+    							<p><input id="text2" placeholder="Last name..." oninput="this.className = ''" name="lname"></p>		
+  							</div>
+							<div class="tab"><p class=info>Would you like to be contacted?</p>
+								<p id="radio"><input type="radio" id="yes" name="choice" required>
+								<label for="yes">Yes</label></p>
+									<p id="radio"><input type="radio" id="no" name="choice" checked>
+								<label for="yes">No</label></p>
+								<p><input id="email" placeholder="Email..." oninput="this.className = ''" name="email"></p>
+  							</div>
+  							<div class="tab">
+  								<p class=info>Options:</p>
+    							<a href="car.html"><img id="align" src= "../img/CarA.png" id="image1"></a>
+    						    <a href="carpool.html"><img id="align" src= "../img/CarpoolA.png" onclick="setUp()" id="image1"></a>
+    							<a href="bike.html"><img id="align" src= "../img/MotorcycleA.png" onclick="setUp()" id="image1"></a>
+    							<a href="bicycle.html"><img id="align" src= "../img/BikeA.png" onclick="setUp()" id="image2"></a>
+
+    							<a href="walk.html"><img id="align" src= "../img/WalkA.png" onclick="setUp()" id="image2"></a>
+    							<a href="Transit.html"><img id="align" src= "../img/BusA.png" onclick="setUp()" id="image2"></a>
+    							<a href="LightRail.html"><img id="align" src= "../img/TransitA.png" onclick="setUp()" id="image2"></a>
+							 	<a href="multimode.html"><img id="align" src= "../img/Multi.png" onclick="setUp()" id="image2"></a>						
+ 							</div>
+ 							<div class="prevbutton">
+      							<button type="button" id="prevBtn" onclick="nextPrev(-1)">Prev</button>
+      							<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    						</div>
+ 							<!-- Circles which indicates the steps of the form: -->
+ 							<div class="slide">
+    							<span class="step"></span>
+    							<span class="step"></span>
+    							<span class="step"></span>
+  							</div>
+						</form>	
+					</div>
+					
+			</div>
+	</div>
+	
+<div class="gradient"></div>
+<div class="container">
+	<ul class="d-flex option">
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://www.csus.edu/campusmap/?s=%7b%22viewMode%22:%22parking%22%7d">
+					<div class="image-wrapper"><img src="../img/Parking.png"></div>
+						<h3 class="titleStyle">Parking Availability</h3>
+						<p>See parking availability before you drive to campus.</p>
+				</a>
+			</div>
+		</li>
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://m2.paybyphone.com/parking">
+					<div class="image-wrapper"><img src="../img/PayBy.png"></div>
+					<h3 class="titleStyle">Pay By Phone</h3>
+					<p>Buy your daily parking permit on your phone. Student lots use location ID 5115</p>
+				</a>
+			</div>
+		</li>
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://csus.doublemap.com/map/">
+					<div class="image-wrapper"><img src="../img/shuttle.jpg"></div>
+					<h3 class="titleStyle">Hornet Express Shuttle</h3>
+					<p>Track where your shuttle is now.</p>
+				</a>
+			</div>
+		</li>
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://www.csus.edu/maps/bikemap/">
+					<div class="image-wrapper"><img src="../img/BikeLane.jpg"></div>
+					<h3 class="titleStyle">Bike Lane Map</h3>
+					<p>See all campus bike lanes on the map.</p>
+				</a>
+			</div>
+		</li>
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://m.csus.edu/sacstate/app/_/_sharedmobilitypartners">
+					<div class="image-wrapper"><img src="../img/BikeShare.jpg"></div>
+					<h3 class="titleStyle">Shared Mobility Partners</h3>
+					<p>BikeShare, ScooterShare, CarShare, RideShare</p>
+				</a>
+				
+				
+			
+			</div>
+		</li>
+		<li class="option-box">
+			<div class="option-box-content">
+				<a href="https://www.google.com/maps/dir/?api=1&destination=California+State+University,+Sacramento&travelmode=transit">
+					<div class="image-wrapper"><img src="../img/TransitPlanner.jpg"></div>
+					<h3 class="titleStyle">Transit Trip Planner</h3>
+					<p>Find your way to and from Sacramento State</p>
+				</a>
+				
+				
+			
+			</div>
+		</li>
+	</ul>	
+</div>
+	<div class="social">
+		<div class="media">
+			<img src="../img/WhiteLogo.png" id=mediaA>	
+			<a href="https://twitter.com/sacstate"><img src="../img/twitter.jpg" id=media></a>
+			<a href="https://www.facebook.com/sacstate"><img src="../img/facebook.jpg" id=media></a>
+			<a href="https://www.instagram.com/sacstate/"><img src="../img/instagram.jpg" id=media></a>
+			<a href="https://www.linkedin.com/school/sacstate"><img src="../img/linkedin.jpg" id=media></a>
+			<a href="https://www.flickr.com/photos/sacstate"><img src="../img/flickr.jpg" id=media></a>
+			<a href="https://www.youtube.com/user/SacStateVideo"><img src="../img/youtube.jpg" id=media></a>
+
+		</div>	
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="../js/survey.js" ></script>
+	</body>
+</html>
