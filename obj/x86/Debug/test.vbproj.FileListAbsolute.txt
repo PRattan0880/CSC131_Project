@@ -1,2 +1,0 @@
-C:\Users\pratt\OneDrive\Documents\CSC\CSC 131\Commute\WebContent\obj\x86\Debug\test.vbprojAssemblyReference.cache
-C:\Users\pratt\OneDrive\Documents\CSC\CSC 131\Commute\WebContent\obj\x86\Debug\test.vbproj.CoreCompileInputs.cache
